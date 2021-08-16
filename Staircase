@@ -1,0 +1,33 @@
+// Staircase detail
+
+// This is a staircase of size n:
+
+   #
+  ##
+ ###
+####
+// Its base and height are both equal to n. It is drawn using # symbols and spaces. The last line is not preceded by any spaces.
+
+// Write a program that prints a staircase of size n.
+
+function staircase(n) {
+    let i = 0;
+    let j = 0;
+    
+    // for for row
+    for(j=0; j<n; j++){
+        let line = "";
+        // for for column
+        for(i=0; i<n; i++){
+            if(j < (n-1) -i){
+                let space = " ";
+                line = line + space;    
+            }
+            if(j >= (n-1) -i){
+                let hash = "#";
+                line = line + hash;    
+            }
+        }
+        console.log(line);
+    }
+}
