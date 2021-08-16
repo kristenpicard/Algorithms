@@ -1,0 +1,12 @@
+// Given an array of integers, find the sum of its elements.
+
+function simpleArraySum(ar) {
+    // Write your code here
+    let i = 0;
+    let c = 0;
+    while(i < ar.length){
+        c = c + ar[i];
+        i++;
+    };
+    return c;
+};
